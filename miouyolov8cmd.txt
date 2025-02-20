@@ -1,0 +1,9 @@
+
+pip install -e .
+
+pip install ultralytics
+pip install yolo
+重要提示！！！如果缺少某些文件的，建议进入Github后翻一下历史版本，找到最开始的版本8.0.4，这个版本不缺少任何文件！！！
+yolo predict  model=yolov8n-seg.pt  source='ultralytics/assets/bus.jpg' 
+yolo val segment model=yolov8n-seg.pt  data=coco8-seg.yaml 
+
